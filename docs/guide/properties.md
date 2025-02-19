@@ -38,7 +38,7 @@ type Layout = Array<LayoutItem>
 ### Breakpoint
 
 ```ts
-type Breakpoint = 'xxs' | 'xs' | 'sm' | 'md' | 'lg'
+type Breakpoint = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl'
 ```
 
 ### Breakpoints
@@ -82,7 +82,7 @@ See also [responsive](#responsive), [breakpoints](#breakpoints) and [cols](#cols
 - type: `number`
 - default: `12`
 
-Says how many columns the grid has. The value should be a *natural number*.
+Says how many columns the grid has. The value should be a _natural number_.
 
 ### row-height
 
@@ -182,7 +182,7 @@ See also [responsiveLayouts](#responsive-layouts), [breakpoints](#breakpoints) a
 ### breakpoints
 
 - type: `Breakpoints`
-- default: `{ lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }`
+- default: `{ xxl: 1400,  xl: 1200, lg: 992, md: 768, sm: 576, xs: 0 }`
 
 Breakpoints defined for responsive layout.
 
@@ -191,7 +191,7 @@ See also [responsiveLayouts](#responsive-layouts) and [cols](#cols)
 ### cols
 
 - type: `Breakpoints`
-- default: `{ lg: 12, md: 10, sm: 6, xs: 4, xxs: 2 }`
+- default: `{ xxl: 12, xl: 12, lg: 8, md: 6, sm: 4, xs: 2 }`
 
 Defines number of columns for each breakpoint.
 
@@ -225,28 +225,28 @@ This is the unique identifier of the item.
 - type: `number`
 - required
 
-Says what is a initial horizontal position of the item (in which column it should be placed). The value must be a *whole number*.
+Says what is a initial horizontal position of the item (in which column it should be placed). The value must be a _whole number_.
 
 ### y
 
 - type: `number`
 - required
 
-Says what is a initial vertical position of the item (in which row it should be placed). The value must be a *whole number*.
+Says what is a initial vertical position of the item (in which row it should be placed). The value must be a _whole number_.
 
 ### w
 
 - type: `number`
 - required
 
-Says what is a initial width of the item (how many columns should span). The value must be a *whole number*.
+Says what is a initial width of the item (how many columns should span). The value must be a _whole number_.
 
 ### h
 
 - type: `number`
 - required
 
-Says what is a initial height of the item (how many rows should span). The value must be a *whole number*.
+Says what is a initial height of the item (how many rows should span). The value must be a _whole number_.
 
 ### min-w
 
@@ -295,7 +295,7 @@ Says if item is resizable. If `null` then it's inherited from parent.
 - type: `boolean`
 - default: `null`
 
-Says if the item is bounded to the container when dragging. If  `null` then it's inherited from parent.
+Says if the item is bounded to the container when dragging. If `null` then it's inherited from parent.
 
 ### static
 

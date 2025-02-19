@@ -19,7 +19,7 @@ export interface LayoutItem extends LayoutItemRequired {
 
 export type Layout = Array<LayoutItem>
 
-export type Breakpoint = 'xxs' | 'xs' | 'sm' | 'md' | 'lg'
+export type Breakpoint = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl'
 export type Breakpoints = Record<Breakpoint, number>
 export type ResponsiveLayout = Record<Breakpoint, Layout>
 

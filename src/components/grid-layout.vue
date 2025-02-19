@@ -107,11 +107,11 @@ const props = defineProps({
   },
   breakpoints: {
     type: Object as PropType<Breakpoints>,
-    default: () => ({ lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 })
+    default: () => ({ xxl: 1400, xl: 1200, lg: 992, md: 768, sm: 576, xs: 0 })
   },
   cols: {
     type: Object as PropType<Breakpoints>,
-    default: () => ({ lg: 12, md: 10, sm: 6, xs: 4, xxs: 2 })
+    default: () => ({ xxl: 12, xl: 12, lg: 8, md: 6, sm: 4, xs: 2 })
   },
   preventCollision: {
     type: Boolean,
